@@ -5,42 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>گروه امید</title>
     <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
             font-family: 'IRANSans', sans-serif; /* فونت فارسی را اینجا جایگزین کنید */
             direction: rtl;
             text-align: right;
-	    height:100%;
-            background: #C3E1DE;
-        }
-        section {
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        h2 {
+            background: #E3F2FD; /* رنگ پس‌زمینه آبی روشن */
             color: #333;
+            line-height: 1.6;
         }
+
+        header {
+            background: linear-gradient(135deg, #1E88E5, #1565C0); /* گرادیانت آبی */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        section {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #1E88E5; /* رنگ آبی */
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #1E88E5;
+            padding-bottom: 10px;
+        }
+
         ul {
-            list-style-type: disc;
-            margin-left: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #F5F5F5; /* رنگ پس‌زمینه خاکستری روشن */
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #1E88E5; /* خط آبی در سمت چپ */
+            transition: background 0.3s ease;
+        }
+
+        ul li:hover {
+            background: #E0E0E0; /* رنگ پس‌زمینه خاکستری تیره‌تر هنگام hover */
+        }
+
+        a {
+            color: #1E88E5; /* رنگ آبی برای لینک‌ها */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            section {
+                margin: 20px 10px;
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-	<center><h1>"گروه امید"</h1></center>
-        <nav>
-	<center><h1>سلام دوستان در این سایت میتوانید اخبار و فایل های گروه مارو ببینید</h1></center>
-  
-        </nav>
+        <h1>گروه امید</h1>
+        <p>سلام دوستان! در این سایت می‌توانید اخبار و فایل‌های گروه ما را مشاهده کنید.</p>
     </header>
 
     <section id="members">
         <h2>اعضا</h2>
         <ul>
-            <li>امیرحسین نیک اندیش(سرگروه) </li>
+            <li>امیرحسین نیک اندیش (سرگروه)</li>
             <li>امیرعلی محمدی</li>
             <li>محمدحسین نادی</li>
             <!-- ... سایر اعضا ... -->
@@ -50,37 +144,23 @@
     <section id="exams">
         <h2>آزمون‌ها</h2>
         <ul>
-            <li><a href="
-https://digiform.ir/w40bd9a85 ">آزمون درس 15</a></li>
-            
+            <li><a href="https://digiform.ir/w40bd9a85">آزمون درس 15</a></li>
             <!-- ... سایر آزمون‌ها ... -->
         </ul>
     </section>
 
     <section id="notes">
-        <h2>فایل ها</h2>
+        <h2>فایل‌ها</h2>
         <ul>
-          <li><a href="https://s32.picofile.com/file/8480526800/%D8%AC%D8%B2%D9%88%D9%87_15_%D9%BE%DB%8C%D8%A7%D9%85.docx.html">جزوه درس 15 (word)</a></li>
-<ul>
-           <li><a href="https://s32.picofile.com/file/8480911168/%D8%AC%D8%B2%D9%88%D9%87_15_%D9%BE%DB%8C%D8%A7%D9%85.pdf.html">جزوه درس 15 ( pdf) </a></li>
-<ul>
-          <li><a href="https://s32.picofile.com/file/8481319126/%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA_%D8%AF%D8%B1%D8%B3_15_%D9%BE%DB%8C%D8%A7%D9%85_%D9%87%D8%A7.mp3.html">پادکست ارئه درس 15</a></li>
-	
-            <!-- ... سایر فایل ها ... -->
+            <li><a href="https://s32.picofile.com/file/8480526800/%D8%AC%D8%B2%D9%88%D9%87_15_%D9%BE%DB%8C%D8%A7%D9%85.docx.html">جزوه درس 15</a></li>
+            <!-- ... سایر فایل‌ها ... -->
         </ul>
     </section>
 
-<section id="notes">
-        <h2>اخبار</h2>
-  <ul>
-            <li><a href=></a></li>
-            
-            <!-- ... سایر اخبار ... -->
-        </ul>
-    </section>
-
+    <section id="news">
+       
     <footer>
-        <p> تمامی حقوق شخص Daradege محفوظ است.</p>
+        <p>تمامی حقوق شخص Daradege محفوظ است.</p>
     </footer>
 </body>
 </html>
