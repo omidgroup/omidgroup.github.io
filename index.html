@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>گروه امید</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Reset CSS */
         * {
@@ -13,20 +14,30 @@
         }
 
         body {
-            font-family: 'IRANSans', sans-serif; /* فونت فارسی را اینجا جایگزین کنید */
+            font-family: 'IRANSans', sans-serif;
             direction: rtl;
             text-align: right;
-            background: #E3F2FD; /* رنگ پس‌زمینه آبی روشن */
+            background: #E8F5E9; /* رنگ پس‌زمینه سبز بسیار روشن */
             color: #333;
             line-height: 1.6;
         }
 
         header {
-            background: linear-gradient(135deg, #1E88E5, #1565C0); /* گرادیانت آبی */
+            background: linear-gradient(135deg, #2E7D32, #1B5E20); /* گرادیانت سبز یشمی پررنگ */
             color: white;
             padding: 40px 20px;
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+            border-radius: 50%;
+            border: 3px solid white;
+            object-fit: cover;
         }
 
         header h1 {
@@ -56,10 +67,10 @@
         }
 
         h2 {
-            color: #1E88E5; /* رنگ آبی */
+            color: #2E7D32; /* رنگ سبز یشمی */
             font-size: 1.8rem;
             margin-bottom: 15px;
-            border-bottom: 2px solid #1E88E5;
+            border-bottom: 2px solid #2E7D32;
             padding-bottom: 10px;
         }
 
@@ -69,30 +80,46 @@
         }
 
         ul li {
-            background: #F5F5F5; /* رنگ پس‌زمینه خاکستری روشن */
+            background: #F1F8E9; /* رنگ پس‌زمینه سبز بسیار روشن */
             margin: 10px 0;
             padding: 15px;
             border-radius: 5px;
-            border-left: 4px solid #1E88E5; /* خط آبی در سمت چپ */
+            border-left: 4px solid #2E7D32; /* خط سبز در سمت چپ */
             transition: background 0.3s ease;
         }
 
         ul li:hover {
-            background: #E0E0E0; /* رنگ پس‌زمینه خاکستری تیره‌تر هنگام hover */
+            background: #DCEDC8; /* رنگ پس‌زمینه سبز روشن‌تر هنگام hover */
         }
 
         a {
-            color: #1E88E5; /* رنگ آبی برای لینک‌ها */
+            color: #2E7D32; /* رنگ سبز یشمی برای لینک‌ها */
             text-decoration: none;
             font-weight: bold;
         }
 
         a:hover {
             text-decoration: underline;
+            color: #1B5E20;
+        }
+
+        .poem-box {
+            background: #F1F8E9;
+            border: 2px solid #2E7D32;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 700px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            font-family: 'IranNastaliq', sans-serif;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            text-align: center;
+            color: #1B5E20;
         }
 
         footer {
-            background: #333;
+            background: #2E7D32;
             color: white;
             text-align: center;
             padding: 20px;
@@ -122,19 +149,26 @@
             h2 {
                 font-size: 1.5rem;
             }
+            
+            .poem-box {
+                font-size: 1.2rem;
+                line-height: 2rem;
+                padding: 15px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="omidsitelogo.jpg" alt="لوگوی گروه امید" class="logo">
         <h1>گروه امید</h1>
         <p>سلام دوستان! در این سایت می‌توانید اخبار و فایل‌های گروه ما را مشاهده کنید.</p>
     </header>
 
     <section id="members">
-        <h2>اعضا</h2>
+        <h2><i class="fas fa-users"></i> اعضا</h2>
         <ul>
-            <li>امیرحسین نیک اندیش (سرگروه)</li>
+            <li>امیرحسین نیک اندیش</li>
             <li>امیرعلی محمدی</li>
             <li>محمدحسین نادی</li>
             <!-- ... سایر اعضا ... -->
@@ -142,7 +176,7 @@
     </section>
 
     <section id="exams">
-        <h2>آزمون‌ها</h2>
+        <h2><i class="fas fa-clipboard-check"></i> آزمون‌ها</h2>
         <ul>
             <li><a href="https://digiform.ir/w40bd9a85">آزمون درس 15</a></li>
             <!-- ... سایر آزمون‌ها ... -->
@@ -150,15 +184,31 @@
     </section>
 
     <section id="notes">
-        <h2>فایل‌ها</h2>
+        <h2><i class="fas fa-file-alt"></i> فایل‌ها</h2>
         <ul>
             <li><a href="https://s32.picofile.com/file/8480526800/%D8%AC%D8%B2%D9%88%D9%87_15_%D9%BE%DB%8C%D8%A7%D9%85.docx.html">جزوه درس 15</a></li>
+ <ul>
+            <li><a href="omidgroup.github.io\Morefiles">فایل های تکمیلی ....</a></li>
+
             <!-- ... سایر فایل‌ها ... -->
         </ul>
     </section>
 
-    <section id="news">
-       
+    <div class="poem-box">
+        خدایا ، هر یک از بندگانت که بر آنان ستمی کردم؛ <br>
+        
+و کسانی که آبرویشان را ریختم ؛ <br>
+        یا اموالشان را تباه کردم <br>
+
+        آنان که غیبتشان را کردم، <br>
+
+        و آنان که به سختی شان انداختم. <br>
+
+        اکنون تو خود، آنان را از من راضی کن ، <br>
+
+        و مرا نیز یاری کن تا حقوق آنان را جبران کنم.
+    </div>
+
     <footer>
         <p>تمامی حقوق شخص Daradege محفوظ است.</p>
     </footer>
