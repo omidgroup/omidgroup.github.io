@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>گروه امید</title>
+    <title>فایل های تکمیلی | گروه امید</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Reset CSS */
@@ -17,13 +17,13 @@
             font-family: 'IRANSans', sans-serif;
             direction: rtl;
             text-align: right;
-            background: #E8F5E9; /* رنگ پس‌زمینه سبز بسیار روشن */
+            background: #E8F5E9;
             color: #333;
             line-height: 1.6;
         }
 
         header {
-            background: linear-gradient(135deg, #2E7D32, #1B5E20); /* گرادیانت سبز یشمی پررنگ */
+            background: linear-gradient(135deg, #2E7D32, #1B5E20);
             color: white;
             padding: 40px 20px;
             text-align: center;
@@ -46,76 +46,83 @@
             margin-bottom: 10px;
         }
 
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
         }
 
-        section {
+        .files-container {
             background: white;
-            margin: 20px auto;
-            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 30px;
+            margin-bottom: 30px;
         }
 
-        section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        h2 {
-            color: #2E7D32; /* رنگ سبز یشمی */
-            font-size: 1.8rem;
-            margin-bottom: 15px;
+        .page-title {
+            color: #2E7D32;
+            font-size: 2rem;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
             border-bottom: 2px solid #2E7D32;
-            padding-bottom: 10px;
+            text-align: center;
         }
 
-        ul {
+        .file-list {
             list-style-type: none;
-            padding: 0;
         }
 
-        ul li {
-            background: #F1F8E9; /* رنگ پس‌زمینه سبز بسیار روشن */
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 5px;
-            border-left: 4px solid #2E7D32; /* خط سبز در سمت چپ */
-            transition: background 0.3s ease;
+        .file-item {
+            background: #F1F8E9;
+            margin: 15px 0;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-right: 4px solid #2E7D32;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
         }
 
-        ul li:hover {
-            background: #DCEDC8; /* رنگ پس‌زمینه سبز روشن‌تر هنگام hover */
+        .file-item:hover {
+            background: #DCEDC8;
+            transform: translateX(-5px);
         }
 
-        a {
-            color: #2E7D32; /* رنگ سبز یشمی برای لینک‌ها */
+        .file-icon {
+            margin-left: 15px;
+            color: #2E7D32;
+            font-size: 1.5rem;
+        }
+
+        .file-link {
+            color: #2E7D32;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.1rem;
+            flex-grow: 1;
         }
 
-        a:hover {
+        .file-link:hover {
+            color: #1B5E20;
             text-decoration: underline;
-            color: #1B5E20;
         }
 
-        .poem-box {
-            background: #F1F8E9;
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #2E7D32;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
             border: 2px solid #2E7D32;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 30px auto;
-            max-width: 700px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            font-family: 'IranNastaliq', sans-serif;
-            font-size: 1.5rem;
-            line-height: 2.5rem;
-            text-align: center;
-            color: #1B5E20;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: #2E7D32;
+            color: white;
         }
 
         footer {
@@ -127,33 +134,21 @@
             font-size: 0.9rem;
         }
 
-        footer p {
-            margin: 0;
-        }
-
-        /* Responsive Design */
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2rem;
             }
-
-            header p {
-                font-size: 1rem;
-            }
-
-            section {
-                margin: 20px 10px;
-                padding: 15px;
-            }
-
-            h2 {
-                font-size: 1.5rem;
+            
+            .page-title {
+                font-size: 1.6rem;
             }
             
-            .poem-box {
-                font-size: 1.2rem;
-                line-height: 2rem;
-                padding: 15px;
+            .file-item {
+                padding: 12px 15px;
+            }
+            
+            .file-link {
+                font-size: 1rem;
             }
         }
     </style>
@@ -162,55 +157,51 @@
     <header>
         <img src="omidsitelogo.jpg" alt="لوگوی گروه امید" class="logo">
         <h1>گروه امید</h1>
-        <p>سلام دوستان! در این سایت می‌توانید اخبار و فایل‌های گروه ما را مشاهده کنید.</p>
     </header>
 
-    <section id="members">
-        <h2><i class="fas fa-users"></i> اعضا</h2>
-        <ul>
-            <li>امیرحسین نیک اندیش</li>
-            <li>امیرعلی محمدی</li>
-            <li>محمدحسین نادی</li>
-            <!-- ... سایر اعضا ... -->
-        </ul>
-    </section>
+    <div class="container">
+        <div class="files-container">
+            <h2 class="page-title">
+                <i class="fas fa-folder-open"></i> فایل های تکمیلی
+            </h2>
+            
+            <ul class="file-list">
+                <li class="file-item">
+<i class="fas fa-file-audio file-icon" title="فایل صوتی"></i> <!-- MP3/WAV -->
+                    <a href="#" class="file-link">پادکست داستان حضرت عقیل (ع)</a>
+                </li>
+                
+                <li class="file-item">
+<i class="fas fa-file-image file-icon" title="فایل تصویر"></i> <!-- تصاویر -->
+                    <a href="https://s33.picofile.com/file/8484119526/Screenshot_2025_04_27_231018.png" class="file-link">خودت را امتحان کن</a>
+                </li>
+                
+                <li class="file-item">
+<i class="fas fa-file-video file-icon" title="فایل ویدیویی"></i> <!-- MP4/AVI -->
+                    <a href="#" class="file-link">ویدئو توضیح کامل درس 15 </a>
+                </li>
+  
+                <li class="file-item">
+<i class="fas fa-file-video file-icon" title="فایل ویدیویی"></i> <!-- MP4/AVI -->
+                    <a href="#" class="file-link">ویدئو توضیح کامل فعالیت های کتاب درس 15 </a>
+                </li>
 
-    <section id="exams">
-        <h2><i class="fas fa-clipboard-check"></i> آزمون‌ها</h2>
-        <ul>
-            <li><a href="https://digiform.ir/w40bd9a85">آزمون درس 15</a></li>
-            <!-- ... سایر آزمون‌ها ... -->
-        </ul>
-    </section>
-
-    <section id="notes">
-        <h2><i class="fas fa-file-alt"></i> فایل‌ها</h2>
-        <ul>
-            <li><a href="https://s32.picofile.com/file/8480526800/%D8%AC%D8%B2%D9%88%D9%87_15_%D9%BE%DB%8C%D8%A7%D9%85.docx.html">جزوه درس 15</a></li>
- <ul>
-            <li><a href="omidgroup.github.io\Morefiles">فایل های تکمیلی ....</a></li>
-
-            <!-- ... سایر فایل‌ها ... -->
-        </ul>
-    </section>
-
-    <div class="poem-box">
-        خدایا ، هر یک از بندگانت که بر آنان ستمی کردم؛ <br>
-        
-و کسانی که آبرویشان را ریختم ؛ <br>
-        یا اموالشان را تباه کردم <br>
-
-        آنان که غیبتشان را کردم، <br>
-
-        و آنان که به سختی شان انداختم. <br>
-
-        اکنون تو خود، آنان را از من راضی کن ، <br>
-
-        و مرا نیز یاری کن تا حقوق آنان را جبران کنم.
+                
+                <li class="file-item">
+<i class="fas fa-file-audio file-icon" title="فایل صوتی"></i> <!-- MP3/WAV -->
+                    <a href="https://s33.picofile.com/file/8484119468/%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA_%D8%A7%D8%B1%D8%A7%D8%A6%D9%87_%D8%AF%D8%B1%D8%B3_15_%D9%BE%DB%8C%D8%A7%D9%85_%D9%87%D8%B4%D8%AA%D9%85_%DA%AF%D8%B1%D9%88%D9%87_%D8%A7%D9%85%DB%8C%D8%AF_mixdown.mp3.html" class="file-link">پادکست توضیح درس 15</a>
+                </li>
+                
+                   </ul>
+            
+            <a href="https://omidgroup.github.io" class="back-link">
+                <i class="fas fa-arrow-right"></i> بازگشت به صفحه اصلی
+            </a>
+        </div>
     </div>
 
     <footer>
-        <p>تمامی حقوق شخص Daradege محفوظ است.</p>
+        <p>تمامی حقوق برای گروه امید محفوظ است. © ۱۴۰۲</p>
     </footer>
 </body>
 </html>
